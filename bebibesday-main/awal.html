@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project Hbd Hbd</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="awal.css"/>
+
+    <style> 
+        body { 
+            background-image: url("assets/back.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+    <style>
+        #sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            padding: 15px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.9;
+        }
+
+        .footer a {
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-xl">
+            <a class="navbar-brand" href="https://www.instagram.com/132.story/" style="font-size: 24px; color: #0D47A1; text-decoration: none;">Happy Birthday Sayangkuuu</a>            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Nav items can go here if needed -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 py-5" id="home">
+        <div class="d-flex flex-md-row align-items-center flex-column mt-1 pt-1">
+            <div id="sticky">
+                <h1>Countdown to 28 September 2024</h1>
+                <div id="countdown" style="font-weight: bold;"></div>
+
+                <div class="display-5 lh-1 fw-bold">
+                    <h1 style="font-size: 30px; font-family: verdana;" id="jam"></h1>
+                </div>
+
+                <div class="display-5 lh-1 fw-bold">
+                    <script type="text/javascript">
+                        // Set the target date
+                        var targetDate = new Date("September 28, 2024 00:00:00").getTime();
+
+                        // Update the countdown every 1 second
+                        var countdownFunction = setInterval(function() {
+                            var now = new Date().getTime();
+                            var distance = targetDate - now;
+
+                            // Calculate days, hours, minutes, and seconds
+                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                            // Display the result
+                            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+                            // If the countdown is over
+                            if (distance < 0) {
+                                clearInterval(countdownFunction);
+                                document.getElementById("countdown").innerHTML = "HAPPY BIRTHDAY BABEE";
+                            }
+                        }, 1000);
+                    </script>
+                </div>
+
+                <div class="mt-2 fw-bold">Barakallah Fii umrik Cantikkk</div>
+                
+                <div class="mt-2">
+                    <p style="font-size: 1rem;">"Semoga segala harapan dan mimpimu tercapai lalu segala yang kamu harapkan menjadi kenyataan. <b>Semoga segala yang di semogakan akan tersemogakan</b> dan jangan lupa untuk bersyukur hari ini serta ucapkan terima kasih kepada yang maha kuasa sudah mengizinkanmu untuk hidup sampai di umur yang genap <b>22 tahun</b> ini, sama juga ucapkan terima kasih pada orang tua kamu yang telah melahirkan dan menjadikan manusia yang bermanfaat bagi keluarga dan orang sekitar."</p>
+                </div>
+
+                <div class="mt-2">
+                    <a href="video.html" class="btn btn-danger rounded-0 mt-1">Klik di sini sayang </a>
+                </div>
+            </div>
+
+            <div class="p-5 mx-auto">
+                <img class="img-fluid" src="assets/dewi.jpg" width="800" style="border-radius: 100px;">
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-white shadow-sm">
+                <div class="container-fluid" style="display: flex; justify-content: center; align-items: center;">
+                    <h6>© 2024 Copyright: Hafizh Maulidan</h6>
+                </div>
+            </nav>
+        </footer>
+        <!-- Footer End -->
+    </div>
+</body>
+</html>
