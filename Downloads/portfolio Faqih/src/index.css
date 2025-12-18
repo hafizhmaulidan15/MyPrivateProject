@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Creating a dark, scientific atmosphere */
+  --bg-dark: #0a0b10;
+  /* Void Black */
+  --bg-card: #14161f;
+  /* Dark Tech Grey */
+  --primary: #00ffcc;
+  /* NiO Green (Nickel Oxide reference) */
+  --primary-glow: rgba(0, 255, 204, 0.3);
+  --secondary: #3b82f6;
+  /* Lab Blue */
+  --accent: #8b5cf6;
+  /* Reaction Purple */
+  --text-main: #e2e8f0;
+  /* White/Grey */
+  --text-muted: #94a3b8;
+  /* Muted Grey */
+
+  --glass: rgba(20, 22, 31, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+
+  /* Font Variables for use in non-Tailwind contexts if any */
+  --font-heading: 'Orbitron', 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-card);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Animations that will be used globally */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
