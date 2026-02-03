@@ -64,4 +64,4 @@ I am open to opportunities in **Accounting, Finance, and Audit**.
 
 ---
 
-© 2026 Dewi Hasanah. All Rights Reserved.
+© 2026 Hafizh Maulidan. All Rights Reserved.
